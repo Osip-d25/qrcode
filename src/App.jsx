@@ -20,7 +20,7 @@ function App() {
       <div className='container'>
         <div className="creator">
           <Anima/>
-          <h1 className="title">Создание QR-кода</h1>
+          <h1 className="title">Создание QR-кода 2</h1>
           <Field setState={setState}/>
           <button className='btn' onClick={showQRCode}>Показать</button>
           <QRCode className='qr-code' value={state}></QRCode>
