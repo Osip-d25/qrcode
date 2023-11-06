@@ -1,0 +1,76 @@
+.container {
+  max-width: 1440px;
+  //width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease 0s;
+
+  @media (max-width: 1440px) {
+    padding: 50px 15px;
+  }
+
+  .creator {
+    max-height: 800px;
+    min-width: 320px;
+    min-height: 320px;
+
+    border-radius: 50px;
+    background: linear-gradient(225deg, #bb4b4b, #9e3f3f);
+    box-shadow: -20px 20px 60px #953c3c,
+    20px -20px 60px #c95151;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: #ddd;
+    padding: 50px;
+  }
+
+
+  .title {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 25px;
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+    }
+  }
+
+  .qr-code {
+    padding: 5px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.89);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    bottom: 0;
+    transition: all 1s ease 0s;
+    width: 200px;
+    height: 0;
+  }
+
+  .showQRCode {
+    height: 200px;
+  }
+}
+
